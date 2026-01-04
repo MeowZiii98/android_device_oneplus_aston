@@ -1,2 +1,5 @@
 # IFAA
 sys.oplus.ifaa.model=ONEPLUS-R23801
+ro.product.marketname=OnePlus 12R
+ro.infinity.soc=Snapdragon 8 Gen 2
+ro.infinity.camera=50MP + 8MP + 2MP

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2025 The LineageOS Project
+# Copyright (C) 2021-2025 The infinityOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,10 +11,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from aston device
 $(call inherit-product, device/oneplus/aston/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common infinity stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_aston
+# Infinity Flags
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_DISABLE_EPPE := true
+TARGET_INCLUDES_LOS_PREBUILTS := true
+TARGET_PREBUILT_BCR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTS_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+EXTRA_UDFPS_ICONS := true
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+
+# Maintainer Info
+INFINITY_BUILD_TYPE := UNOFFICIAL
+INFINITY_MAINTAINER := MeowZiii98
+PRODUCT_NAME := infinity_aston
 PRODUCT_DEVICE := aston
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
